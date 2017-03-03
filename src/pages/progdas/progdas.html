@@ -17,14 +17,69 @@
 <img src="/assets/img/progdas.jpg"/>
 <div padding>
   <p>Pemrograman adalah suatu kumpulan urutan perintah ke komputer untuk mengerjakan sesuatu, dimana instruksi tersebut menggunakan bahasa yang dimengerti  oleh komputer atau dikenal dengan bahasa pemrograman.</p>
-  <button ion-button block class="warnaButton">Materi</button>
-  <p></p>
-  <button ion-button block class="warnaButton1">Modul</button>
-  <p></p>
-  <button ion-button full>Latihan</button>
+
+  
 </div>
 
 
+<div class="materiBackgroud">
+<ion-card>
+  <ion-card-header>
+    Materi
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item (click)="changeMateri()">
+     
+      Ch. 1 - Variabel, Tipe Data, Standard I/O
+
+    </button>
+    <button ion-item (click)="changeMateri()">
+     
+      Ch. 2 - Seleksi Kondisi
+
+    </button>
+
+  
+
+  </ion-list>
+</ion-card>
+
+
+<ion-card>
+  <ion-card-header>
+    Modul Praktikum
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+     
+      Bab 1 - Input Output
+
+    </button>
+    <button ion-item>
+     
+      Bab 2 - Looping
+
+    </button>
+
+  
+
+  </ion-list>
+</ion-card>
+
+
+  <div padding>
+  <p></p>
+  <button ion-button full>Latihan</button>
+
+  </div>
+
+</div>
+
+
+
+ 
 
 
 </ion-content>

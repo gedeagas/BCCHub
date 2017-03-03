@@ -6,6 +6,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProgdasPage } from '../pages/progdas/progdas';
+import { ProgdasMateriPage } from '../pages/progdas-materi/progdas-materi'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ProgdasPage } from '../pages/progdas/progdas';
     ContactPage,
     HomePage,
     TabsPage,
-    ProgdasPage
+    ProgdasPage,
+    ProgdasMateriPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +29,8 @@ import { ProgdasPage } from '../pages/progdas/progdas';
     ContactPage,
     HomePage,
     TabsPage,
-    ProgdasPage
+    ProgdasPage,
+    ProgdasMateriPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
