@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 
 /*
@@ -13,11 +14,20 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'progdas-materi.html'
 })
 export class ProgdasMateriPage {
+    post:any;
+    link:any;
+    ytUrl:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProgdasMateriPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams, private sanitizer: DomSanitizer) {
+    this.ytUrl = 'https://www.youtube.com/embed/';
+    this.post = navParams.get('post');
+    console.log(this.post);
+
+    this.link = this.sanitizer.bypassSecurityTrustResourceUrl(this.ytUrl + this.post.acf.youtube_link);
+
   }
+
+  
 
 }

@@ -14,72 +14,80 @@
 
 
 <ion-content>
-<img src="/assets/img/progdas.jpg"/>
+<img src="assets/img/progdas.jpg"/>
+
 <div padding>
+  <p>Course By, <b>Muhammad Ridho  </b></p>
   <p>Pemrograman adalah suatu kumpulan urutan perintah ke komputer untuk mengerjakan sesuatu, dimana instruksi tersebut menggunakan bahasa yang dimengerti  oleh komputer atau dikenal dengan bahasa pemrograman.</p>
-
-  
-</div>
-
-
-<div class="materiBackgroud">
-<ion-card>
-  <ion-card-header>
-    Materi
-  </ion-card-header>
-
-  <ion-list>
-    <button ion-item (click)="changeMateri()">
-     
-      Ch. 1 - Variabel, Tipe Data, Standard I/O
-
-    </button>
-    <button ion-item (click)="changeMateri()">
-     
-      Ch. 2 - Seleksi Kondisi
-
-    </button>
-
-  
-
-  </ion-list>
-</ion-card>
-
-
-<ion-card>
-  <ion-card-header>
-    Modul Praktikum
-  </ion-card-header>
-
-  <ion-list>
-    <button ion-item>
-     
-      Bab 1 - Input Output
-
-    </button>
-    <button ion-item>
-     
-      Bab 2 - Looping
-
-    </button>
-
-  
-
-  </ion-list>
-</ion-card>
-
-
-  <div padding>
-  <p></p>
   <button ion-button full>Latihan</button>
 
-  </div>
-
+  
 </div>
+<ion-list>
+    <ion-list-header>Materi Pembelajaran</ion-list-header>
+
+    <div  *ngFor="let post of posts" class="a">
+      <ion-item (click)="viewItem(post)">
+     <ion-icon name="ios-videocam-outline" item-left></ion-icon>
+
+      <h2>        {{post.title.rendered}}</h2>
+    </ion-item>
+    </div>
+    <br>
+</ion-list>
+<br>
+<ion-list>
+    <ion-list-header>Modul Praktikum</ion-list-header>
+
+      <ion-item (click)="showToast('top')">
+        <ion-icon name="ios-copy-outline" item-left></ion-icon>
+
+
+        <h2>Program Input</h2>
+      </ion-item>
+
+      <ion-item (click)="showToast('top')">
+        <ion-icon name="ios-copy-outline" item-left></ion-icon>
+
+
+        <h2>Seleksi Kondisi</h2>
+      </ion-item>
+
+      <ion-item (click)="showToast('top')">
+        <ion-icon name="ios-copy-outline" item-left></ion-icon>
+
+
+        <h2>Perulangan</h2>
+      </ion-item>
+
+      <ion-item (click)="showToast('top')">
+        <ion-icon name="ios-copy-outline" item-left></ion-icon>
+
+
+        <h2>Tipe Data Array</h2>
+      </ion-item>
+
+      <ion-item (click)="showToast('top')">
+        <ion-icon name="ios-copy-outline" item-left></ion-icon>
+
+
+        <h2>Program Dengan Menggunakan Method</h2>
+      </ion-item>
+    <br>
+</ion-list>
+<br>
+
 
 
 
  
-
+ <ion-fab left bottom>
+    <button ion-fab color="dark"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab><ion-icon name="ios-bookmark"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+     
+    </ion-fab-list>
+  </ion-fab>
 
 </ion-content>

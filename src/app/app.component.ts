@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
 import { TabsPage } from '../pages/tabs/tabs';
-
+import {Progdas} from '../providers/progdas';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [Progdas]
 })
 export class MyApp {
   rootPage = TabsPage;
