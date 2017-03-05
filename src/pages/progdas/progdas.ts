@@ -6,14 +6,6 @@ import 'rxjs/add/operator/map';
 import {Progdas} from '../../providers/progdas';
 import { ToastController } from 'ionic-angular';
 
-
-
-/*
-  Generated class for the Progdas page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-progdas',
   templateUrl: 'progdas.html'
@@ -24,7 +16,6 @@ export class ProgdasPage {
     modul:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private progdas: Progdas, public toastCtrl: ToastController) {
-    
   }
 
   ngOnInit(){
@@ -44,10 +35,8 @@ export class ProgdasPage {
   getPost(category){
 
     this.progdas.getPost(category).subscribe(response => {
-              this.posts = response;
-
+        this.posts = response;
         console.log(response);
-
     });
 
   }
