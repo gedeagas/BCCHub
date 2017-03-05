@@ -1,10 +1,11 @@
 ![](https://github.com/gedeagas/BCCHub/raw/master/resources/bcc.jpg)
 
 
-[![npm version](https://badge.fury.io/js/ionic-angular.svg)](https://badge.fury.io/js/ionic-angular)
-[![Circle CI](https://circleci.com/gh/driftyco/ionic.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/driftyco/ionic)
+
 
 # BCCHub
+[![npm version](https://badge.fury.io/js/ionic-angular.svg)](https://badge.fury.io/js/ionic-angular)
+[![Circle CI](https://circleci.com/gh/driftyco/ionic.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/driftyco/ionic)
 BCCHub is an app for learn coding in mobile apps.BCCHub apps is a crossplatform app for Android, iOS and Windows Phone. The content of the course is curated from BCC Community youtube page and website.
 
 ### Getting Started
