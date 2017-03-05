@@ -4,9 +4,7 @@ import 'rxjs/add/operator/map';
 
 /*
   Generated class for the Progdas provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
+  Code By : Agastya Darma Laksana
 */
 @Injectable()
 export class Progdas {
