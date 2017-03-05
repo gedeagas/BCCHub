@@ -1,3 +1,6 @@
+![](https://github.com/gedeagas/BCCHub/raw/master/resources/bcc.jpg)
+
+
 [![npm version](https://badge.fury.io/js/ionic-angular.svg)](https://badge.fury.io/js/ionic-angular)
 [![Circle CI](https://circleci.com/gh/driftyco/ionic.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/driftyco/ionic)
 
