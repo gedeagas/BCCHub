@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="white">
     <ion-title>Pemrograman Dasar</ion-title>
   </ion-navbar>
 
@@ -17,13 +17,16 @@
 <img src="assets/img/progdas.jpg"/>
 
 <div padding>
-  <p>Course By, <b>Muhammad Ridho  </b></p>
-  <p>Pemrograman adalah suatu kumpulan urutan perintah ke komputer untuk mengerjakan sesuatu, dimana instruksi tersebut menggunakan bahasa yang dimengerti  oleh komputer atau dikenal dengan bahasa pemrograman.</p>
-  <button ion-button full>Latihan</button>
+  <h1 class="home-font">Pemrograman Dasar</h1>
+  <br>
+  <h5 class="home-light">Hosted By</h5>
+  <h5 class="home-light">Muhammad Ridho</h5>
 
+
+  <p class="global-font ">Pemrograman adalah suatu kumpulan urutan perintah ke komputer untuk mengerjakan sesuatu, dimana instruksi tersebut menggunakan bahasa yang dimengerti  oleh komputer atau dikenal dengan bahasa pemrograman.</p>
   
 </div>
-<ion-list>
+<ion-list padding>
     <ion-list-header>Materi Pembelajaran</ion-list-header>
 
     <div  *ngFor="let post of posts" class="a">
@@ -36,7 +39,7 @@
     <br>
 </ion-list>
 <br>
-<ion-list>
+<ion-list padding>
     <ion-list-header>Modul Praktikum</ion-list-header>
 
       <ion-item (click)="showToast('top')">

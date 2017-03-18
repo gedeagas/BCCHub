@@ -1,5 +1,6 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabIcon="ios-book"></ion-tab>
-  <ion-tab [root]="tab3Root" tabIcon="contacts"></ion-tab>
+<ion-tabs [color]="isAndroid ? 'white' : 'white'">
+  <ion-tab [root]="tab1Root" tabTitle="EXPOLRE" tabIcon="ios-search-outline"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="COURSES" tabIcon="ios-albums-outline"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="SAVED" tabIcon="ios-heart-outline"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="PROFILE" tabIcon="ios-people-outline"></ion-tab>
 </ion-tabs>

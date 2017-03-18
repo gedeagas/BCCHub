@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProgdasPage } from '../pages/progdas/progdas';
 import { ProgdasMateriPage } from '../pages/progdas-materi/progdas-materi'
+import {SavePage} from '../pages/save/save';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProgdasMateriPage } from '../pages/progdas-materi/progdas-materi'
     HomePage,
     TabsPage,
     ProgdasPage,
-    ProgdasMateriPage
+    ProgdasMateriPage,
+    SavePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,7 +32,8 @@ import { ProgdasMateriPage } from '../pages/progdas-materi/progdas-materi'
     HomePage,
     TabsPage,
     ProgdasPage,
-    ProgdasMateriPage
+    ProgdasMateriPage,
+    SavePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

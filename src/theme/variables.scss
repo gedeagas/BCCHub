@@ -28,6 +28,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
+  white:      #fff,
+  green:    #00a98f,
   dark:       #222
 );
 
@@ -74,5 +76,25 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
+@font-face {
+    font-family: 'aileronbold';
+    src: url('../assets/fonts/aileron-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/aileron-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aileronlight';
+    src: url('../assets/fonts/aileron-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/aileron-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @import "roboto";
 @import "noto-sans";
